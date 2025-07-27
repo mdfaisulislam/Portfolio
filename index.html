@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md.Faisul Islam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Poppins, Roboto, Open Sans are already linked. Adding more for demonstration -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div class="background-shape-extra"></div>
+
+    <div class="container" id="draggableContainer">
+
+        <header id="home" class="glass-card header">
+            <div class="header-top-row">
+                <div class="logo-container">
+                    <img src="/image/logo.png" alt="Portfolio Logo" class="portfolio-logo" id="portfolioLogo">
+                </div>
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="navbar" id="mainNavbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img id="profilePic" src="/image/faisul.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Md. Faisul Islam</h1>
+            
+            <p class="subtitle">Aspiring Creator & Lifelong Learner</p>
+        </header>
+
+        <section id="about" class="glass-card">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Md. Faisul Islam. I'm a curious and creative individual who loves exploring new ideas.
+                I believe that the best way to learn is by doing, and I'm always looking for a new challenge or a new topic to dive into.
+                While I'm just starting my journey, I'm excited to grow and create things that are both beautiful and meaningful.
+            </p>
+        </section>
+        <section id="projects" class="glass-card">
+            <h2>Things I've Made</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-icon">🎵</div>
+                    <h3>Curated a Playlist</h3>
+                    <p>A 3-hour playlist designed for late-night focus sessions.</p>
+                </div>
+                <div class="project-item">
+                    <div class="project-icon">✍️</div>
+                    <h3>Wrote a Short Story</h3>
+                    <p>A sci-fi story about a robot who discovers music.</p>
+                </div>
+                <div class="project-item">
+                    <div class="project-icon">🎨</div>
+                    <h3>Designed a Poster</h3>
+                    <p>A minimalist poster for my favorite movie using only free tools.</p>
+                </div>
+            </div>
+        </section>
+        <section id="exploring" class="glass-card">
+            <h2>What I'm Exploring</h2>
+            <ul id="interestsList" class="interests-list">
+                <li class="interest-tag">Digital Art & Illustration</li>
+                <li class="interest-tag">Creative Writing</li>
+                <li class="interest-tag">Photography</li>
+                <li class="interest-tag">Programming</li>
+            </ul>
+        </section>
+        <footer id="contact" class="glass-card contact-section">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to connecting with new people. Feel free to reach out!</p>
+            <div class="social-links">
+                <a href="https://x.com/mdfaisulislam0" title="X" target="_blank">X</a>
+                <a href="https://www.linkedin.com/in/mdfaisulislam0/" title="LinkedIn" target="_blank">Li</a>
+                <a href="https://www.facebook.com/mdfaisulislam0/" title="Facebook" target="_blank">Fb</a>
+                <a href="mailto:mdfaisulislam1@gmail.com" title="Email" target="_blank">@</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <button id="customToggleBtn" class="fixed-custom-button" title="Customize">Custom</button>
+
+    <div id="customizationPanel" class="customization-panel">
+        <h3>Customize Appearance</h3>
+        
+        <h4>Logo</h4>
+        <div class="custom-input-group">
+            <input type="url" id="logoUrlInput" placeholder="Enter logo image URL">
+            <button id="applyLogoUrlBtn" class="ai-feature-button">Apply Logo</button>
+        </div>
+
+        <h4>Profile Picture</h4>
+        <div class="custom-input-group">
+            <input type="url" id="profilePicUrlInput" placeholder="Enter image URL">
+            <button id="applyProfilePicBtn" class="ai-feature-button">Apply Image</button>
+        </div>
+
+        <h4>Background Gradient</h4>
+        <div class="custom-input-group">
+            <label for="gradientStartColorPicker">Start:</label>
+            <input type="color" id="gradientStartColorPicker" value="#8EC5FC" title="Pick a Start Color">
+        </div>
+        <div class="custom-input-group">
+            <label for="gradientEndColorPicker">End:</label>
+            <input type="color" id="gradientEndColorPicker" value="#E0C3FC" title="Pick an End Color">
+        </div>
+        <button id="applyGradientBtn" class="ai-feature-button">Apply Gradient</button>
+
+        <h4>Solid Background</h4>
+        <div class="custom-input-group">
+            <label for="solidColorPicker">Color:</label>
+            <input type="color" id="solidColorPicker" value="#FFFFFF" title="Pick a Solid Color">
+            <button id="applySolidColorBtn" class="ai-feature-button">Apply Solid</button>
+        </div>
+        
+        <h4>Predefined Themes</h4>
+        <div class="predefined-themes-grid">
+            <button class="color-option-btn default" data-theme="default" title="Default Theme"></button>
+            <button class="color-option-btn green" data-theme="green" title="Green Theme"></button>
+            <button class="color-option-btn orange" data-theme="orange" title="Orange Theme"></button>
+            <button class="color-option-btn dark" data-theme="dark" title="Dark Theme"></button>
+        </div>
+
+        <h4>Font Family</h4>
+        <div class="custom-input-group">
+            <input type="text" id="fontFamilyInput" placeholder="e.g., 'Arial', sans-serif" value="'Poppins', sans-serif">
+            <button id="applyFontBtn" class="ai-feature-button">Apply Font</button>
+        </div>
+
+        <div class="predefined-fonts-grid" id="predefinedFontsGrid">
+            <button class="font-option-btn" data-font="'Poppins', sans-serif" style="font-family: 'Poppins', sans-serif;">Poppins</button>
+            <button class="font-option-btn" data-font="'Roboto', sans-serif" style="font-family: 'Roboto', sans-serif;">Roboto</button>
+            <button class="font-option-btn" data-font="'Open Sans', sans-serif" style="font-family: 'Open Sans', sans-serif;">Open Sans</button>
+            <button class="font-option-btn" data-font="'Lato', sans-serif" style="font-family: 'Lato', sans-serif;">Lato</button>
+            <button class="font-option-btn" data-font="'Montserrat', sans-serif" style="font-family: 'Montserrat', sans-serif;">Montserrat</button>
+            <button class="font-option-btn" data-font="'Arial', sans-serif" style="font-family: 'Arial', sans-serif;">Arial</button>
+            <button class="font-option-btn" data-font="'Verdana', sans-serif" style="font-family: 'Verdana', sans-serif;">Verdana</button>
+            <button class="font-option-btn" data-font="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Times New Roman</button>
+            <button class="font-option-btn" data-font="'Georgia', serif" style="font-family: 'Georgia', serif;">Georgia</button>
+            <button class="font-option-btn" data-font="'Merriweather', serif" style="font-family: 'Merriweather', serif;">Merriweather</button>
+            <button class="font-option-btn" data-font="'Playfair Display', serif" style="font-family: 'Playfair Display', serif;">Playfair Display</button>
+            <button class="font-option-btn" data-font="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Courier New</button>
+            <button class="font-option-btn" data-font="'Fira Code', monospace" style="font-family: 'Fira Code', monospace;">Fira Code</button>
+            <button class="font-option-btn" data-font="'Pacifico', cursive" style="font-family: 'Pacifico', cursive;">Pacifico</button>
+            <button class="font-option-btn" data-font="'Bebas Neue', sans-serif" style="font-family: 'Bebas Neue', sans-serif;">Bebas Neue</button>
+        </div>
+
+        <button id="resetThemeBtn" class="ai-feature-button">Reset Theme</button>
+
+        <h4>Layout Editor</h4>
+        <button id="layoutEditorToggleBtn" class="ai-feature-button">
+            <span id="layoutToggleText">Enable Layout Editing</span>
+        </button>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
